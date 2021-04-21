@@ -1,0 +1,434 @@
+.flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.servicesBlock
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+.jobsExampleBlock 
+	.flex-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+
+.servicesList, .jobsList {
+	list-style-type: none;
+	padding: 0;
+}
+
+.servicesBlock {
+	padding-top: 70px;
+	margin-top: 20px;
+}
+
+.servicesBlock__headline {
+	padding: 20px 130px;
+	font-size: 54px;
+	margin: 0;
+	text-align: center;
+}
+
+.servicesList { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 76px;
+	margin-bottom: 92px;
+ }
+
+ .servicesListItem {
+ 	max-width: 271px;
+ }
+
+.servicesListItem:first-child {
+ 	margin-right: 28px;
+    padding-right: 14px;
+}
+
+
+.servicesListItem:nth-child(3) {
+ 	padding-left: 43px;
+    padding-right: 20px;
+}
+
+
+.servicesListItem:last-child {
+ 	padding-left: 24px;
+ }
+
+.listItemImgContainer {
+	margin: 0;
+	padding-top: 17px;
+	text-align: center;
+}
+
+
+.listItemImgContainer__caption {
+	font-size: 20px;
+	color: #8993ad;
+	line-height: 30px;
+	margin-top: 11px;
+}
+
+.cationType2 {
+	display: none;
+}
+
+.servicesBlock__checkCostBtn {
+	display: block;
+	width: 270px;
+	padding:  21px 20px 19px 20px;
+	align-self: center;
+	color: #ffffff;
+	background-color: #ff4e2e;
+	cursor: pointer;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+.jobsExampleBlock {
+	margin-top: 175px;
+	padding-top: 20px;
+}
+
+
+
+.jobsExampleBlock__headline {
+	padding: 20px 130px;
+	font-size: 54px;
+	margin: 0;
+	text-align: center;
+}
+
+.jobsExampleBlockCarousel {
+	position: relative;
+}
+
+.jobsList {
+	display: flex;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-bottom: 95px;
+	margin-top: 103px;
+	
+}
+
+
+
+.jobsListItem {
+	flex-basis: 370px;
+	flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 30px;  
+}
+
+.jobsListItem 
+	img {
+		width: 100%;
+}
+
+.jobsListItem:last-child {
+	margin-right: 0;
+}
+
+
+.jobsListItemImageContainer {
+	margin: 0;
+}
+
+.jobsListItemImageContainer__caption {
+	margin-top: 32px;
+	font-size: 20px;
+	color: #8993ad;
+	text-align: center;
+	font-weight: 500;
+}
+
+
+.jobsExampleBlock__orderBtn {
+	display: block;
+	width: 270px;
+	padding:  20px;
+	align-self: center;
+	color: #ffffff;
+	background-color: #ff4e2e;
+	cursor: pointer;
+	font-size: 18px;
+	text-align: center;
+	border: 0;
+
+
+}
+
+.jobsExampleBlock__checkCostBtn {
+	display: none;
+}
+
+.captionType2 {
+	display: none;
+}
+
+.indicatorsList {
+	display: none;
+}
+
+
+.priceBlock {
+	width: 100%;
+	background: linear-gradient(10deg , #ff8f5a 25%, #ff2f96 75%);
+	margin-top: 102px;
+	position: relative;
+}
+
+.backgroundElementsOfPriceBlock {
+	background: #ffffff;
+	top: 200px;
+	left: 200px;
+	opacity: 1;
+	-webkit-background-clip: text;
+	background-clip: text;
+	transition: none;
+
+}
+
+.priceBlock
+	.background__Sharp_Position {
+		top: 247px;
+		left: 246px;
+		font-size: 57px;
+		transform: rotate(19deg);
+	}
+
+.priceBlock
+	.background__DivTag_Position {
+		top: 301px;
+		left: auto;
+		right: 407px;
+		font-size: 38px;
+		transform: rotate(21deg);
+	}
+
+.priceBlock
+	.background__EmptyTag_Position {
+		top: 73px;
+		left: auto;
+		right: 207px;
+		font-size: 40px;
+		transform: rotate(-22deg);
+
+	}
+
+.priceBlock
+	.background__Braces_Position1 {
+		top: 60px;
+		left: 129px;
+		font-size: 48px;
+		transform: rotate(27deg);
+	}
+
+.priceBlock
+	.background__Braces_Position2 {
+		top: 256px;
+		left: auto;
+		right: 109px;
+		font-size: 49px;
+		transform: rotate(-17deg);
+	}
+
+
+
+
+.priceBlockLimitCotnainer {
+	padding-left: 114px;
+	padding-right: 105px;
+	padding-top: 75px;
+	padding-bottom: 80px;
+
+}
+
+	.priceBlock__mainPBText {
+		font-size: 45px;
+		font-weight: bold;
+		color: white;
+		line-height: 60px;
+		margin-bottom: 30px;
+	}
+
+	.priceBlock__secondaryPBText{
+		font-size: 18px;
+		color: white;
+		line-height: 30px;
+		padding-right: 130px;
+		padding-left: 13px;
+		position: relative;
+	}
+
+	.priceBlock__secondaryPBText:before {
+		content: "*";
+		position: absolute;
+		left: 0;
+	}
+
+	.priceBlock__secondaryPBText
+		cite {
+			font-style: normal;
+		}
+
+.jobsExampleBlock__arrowBtn {
+	width: 60px;
+	height: 60px;
+	background: url("../img/arrow.png") no-repeat;
+	box-shadow: 0 0 15px 4px #f3f3f3;
+	border: 0;
+	border-radius: 30px;
+	cursor: pointer;
+	position: absolute;
+	top: 220px;
+    left: -30px;
+}
+
+.jobsExampleBlock__arrowBtn_arrow-right {
+	transform: rotate(180deg);
+	right: -30px;
+    left: auto;
+}
+
+.orderSectionModal {
+	position: fixed;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #0000009e;
+	z-index: 30;
+	opacity: 0;
+	pointer-events: none;
+	transition: ease 0.5s all;
+}
+
+.orderSectionModal_active {
+	opacity: 1;
+	transition: ease 0.5s all;
+	pointer-events: auto;
+}
+
+.orderSection {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	padding: 0;
+	background: linear-gradient(10deg , #ff8f5a 25%, #ff2f96 75%);
+	border-radius: 10px;
+	max-height: 0px;
+	transition: ease 1s all;
+}
+
+.orderSection_active {
+	padding: 10px;
+	max-height: 800px;
+	transition: ease 1s all;
+}
+
+.orderSection__headline {
+	color: #ffffff;
+	text-align: center;
+	margin: 0;
+	flex-basis: 215px;
+	font-weight: bold;
+	line-height: 40px;
+	padding: 55px 0;
+	font-size: 30px;
+}
+
+.orderSection__closeBtn {
+	position: absolute;
+	top: -27px;
+	right: 0;
+	color: #ffffff;
+	border: none;
+	background-color: transparent;
+	font-size: 14px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.orderSection__closeBtn:hover {
+	color: #E63E9D;
+}
+
+.orderSection__closeBtn:hover, .orderSectionFormSubmitBtn:hover {
+	text-decoration: underline;
+}
+
+.orderSectionForm {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-basis: 820px;
+	background-color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.orderSectionFormGroup {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.orderSectionFormGroup__label {
+	color: #8993ad;
+}
+
+.orderSectionFormGroup__field {
+	margin-top: 10px;
+	width: 320px;
+	height: 30px;
+	border: 1px solid #8993ad;
+}
+
+.orderSectionFormGroup__field:invalid {
+	border: 1px #C60505 solid;
+}
+
+.orderSectionFormSubmitBtn {
+	color: #ffffff;
+	background: linear-gradient(10deg , #ff8f5a 25%, #ff2f96 75%);
+	padding: 15px 30px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: none;
+	cursor: pointer;
+	align-content: center;
+	transform: skew(25deg);
+	transition: ease 0.5s all;
+	
+}
+
+.orderSectionFormSubmitBtn:hover {
+	box-shadow: 0 0 10px #000000;
+	transition: ease 0.5s all;
+}
+
+
+
+.orderSectionFormSubmitBtn__text {
+	display: block;
+	transform: skew(-25deg);
+}
+
+
+
+
+

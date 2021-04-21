@@ -1,0 +1,60 @@
+body {
+	box-sizing: border-box;
+	margin: 0;						/* задание основного стиля страницы, установка нулевых отступов веб-документа, размеров */
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #000000;
+	background-color: #ffffff;
+	line-height: 20px;	
+	min-width: 320px;
+}
+
+*, *::before, *::after {  			/* все элементы на странице наследуют border-box для того, чтобы ширина блока высчитывалась по границе,*/	
+	box-sizing: inherit;			/*размеры остаются прежними при добавлении границы или padding */
+}
+
+body.modal-active {					
+	overflow: hidden;
+}
+
+img {								/* задание размера всех изображений во всю ширину родительского блока */
+	max-width: 100%;
+}
+
+button, input {
+	outline: none;
+}
+
+a {									/* задание оформления всех ссылок на странице */
+	text-decoration: none;
+	color: inherit;
+}
+
+p {
+	margin: 0;
+}
+
+.fixed-container {					/* контейнер ограничивающий расположение контента по ширине, центровщик */
+	max-width: 1170px;
+	min-width: 280px;
+	margin: 0 auto;
+}
+
+.visually-hidden {					/* класс для задания скрытого режима отображения элементов */
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); 
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.clearFix::after {					/* возвращает float - элементы в поток */
+    content: "";
+    clear: both;
+    display: table;
+}
+
