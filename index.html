@@ -4,18 +4,11 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Одностраничный лендинг</title>
-		<link rel="preload" href="fonts/Roboto/roboto-regular.woff2" as="font">
-		<link rel="preload" href="fonts/Roboto/roboto-500.woff2" as="font">
-		<link rel="preload" href="fonts/Roboto/roboto-700.woff2" as="font">
-		<link rel="preload" href="fonts/Roboto/roboto-900.woff2" as="font">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/fonts.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel="stylesheet" type="text/css" href="css/header.css">
+		<link rel="preload" type="font/woff2" crossorigin="anonymous" href="fonts/Roboto/roboto-regular.woff2" as="font">
+		<link rel="preload" type="font/woff2" crossorigin="anonymous" href="fonts/Roboto/roboto-500.woff2" as="font">
+		<link rel="preload" type="font/woff2" crossorigin="anonymous" href="fonts/Roboto/roboto-700.woff2" as="font">
+		<link rel="preload" type="font/woff2" crossorigin="anonymous" href="fonts/Roboto/roboto-900.woff2" as="font">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/footer.css">
-		<link rel="stylesheet" type="text/css" href="css/disable_scroll.css">
-		<link rel="stylesheet" type="text/css" href="css/media.css">
 		<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -29,8 +22,6 @@
 		<header class="mainHeader">
 			<div class="fixed-container">
 				<div class="flex-container header-content">
-					<h1 class="header-content__headline visually-hidden">Мой лендинг</h1>
-
 					<button class="header-content__menuBtn js-header-content__menuBtn" aria-label="Открыть меню" aria-expanded="false"></button>
 
 					<nav class="main-menu js-main-menu">
@@ -55,15 +46,17 @@
 
 				<div class="fixed-container flex-container">
 					<div class="personInfo">
-						<p class="personInfo__nameOfPerson">
+						<h1 class="personInfo__headline">
+							<p class="personInfo__nameOfPerson">
 							Дмитрий Алексеев 
-						</p>
+							</p>
 
-						<p class="personInfo__job">
-							Frontend-разработчик и веб-верстальщик
-						</p>
+							<p class="personInfo__job">
+								Frontend-разработчик и веб-верстальщик
+							</p>
+						</h1>
 
-						<a aria-label="Узнать больше" class="personInfo__moreBtn" href="https://vk.com">Узнать больше</a>
+						<a class="personInfo__moreBtn" href="https://vk.com">Узнать больше</a>
 					</div>		
 				</div>
 
@@ -92,7 +85,7 @@
 					<ul class="servicesList">
 						<li class="servicesListItem">
 							<figure class="listItemImgContainer">
-								<img src="icons/tools-and-utensils.svg" alt="Закрывающий тег" class="listItemImgContainer__image">
+								<span id="serviceIcon1" class="listItemImgContainer__image"></span>
 								
 								<figcaption class="listItemImgContainer__caption">
 									Вёрстка лендинг&ndash;страниц и сайтов любой сложности
@@ -102,7 +95,7 @@
 
 						<li class="servicesListItem">
 							<figure class="listItemImgContainer">
-								<img src="icons/responsive.svg" alt="Гаджеты" class="listItemImgContainer__image">
+								<span id="serviceIcon2" class="listItemImgContainer__image"></span>
 								
 								<figcaption class="listItemImgContainer__caption">
 									Адаптивная вёрстка под все браузеры и устройства
@@ -112,7 +105,7 @@
 
 						<li class="servicesListItem">
 							<figure class="listItemImgContainer">
-								<img src="icons/programming.svg" alt="Иконка C#" class="listItemImgContainer__image">
+								<span id="serviceIcon3" class="listItemImgContainer__image"></span>
 								
 								<figcaption class="listItemImgContainer__caption">
 									Frontend<span class="captionType1">&ndash;</span><span class="captionType2"> &ndash; </span>разработка и программирование
@@ -122,7 +115,7 @@
 
 						<li class="servicesListItem">
 							<figure class="listItemImgContainer">
-								<img src="icons/coding.svg" alt="Закрывающий тег с шестернёй" class="listItemImgContainer__image">
+								<span id="serviceIcon4" class="listItemImgContainer__image"></span>
 								
 								<figcaption class="listItemImgContainer__caption">
 									Исправление и доработка существующей вёрстки
@@ -131,7 +124,7 @@
 						</li>
 					</ul>
 
-					<a aria-label="Узнать стоимость" href="#price" class="servicesBlock__checkCostBtn js-main-menu-list-item__link">Узнать стоимость</a>
+					<a href="#price" class="servicesBlock__checkCostBtn js-main-menu-list-item__link">Узнать стоимость</a>
 				</div>
 			</section>
 
@@ -160,7 +153,7 @@
 							<li class="jobsListItem">
 								<figure class="jobsListItemImageContainer">
 									<picture>
-										<source media="(max-width: 1023px)" srcset="img/Layer1_320.png 1x, img/Layer1_320.png 2x">
+										<source media="(max-width: 600px)" srcset="img/Layer1_320.png 1x, img/Layer1_320.png 2x">
 										<source media="(max-width: 1919px)" srcset="img/Layer1_1024.png 1x, img/Layer1_1024.png 2x">
 										<img src="img/Layer1.jpg" alt="Ребёнок с игрушками">
 									</picture>
@@ -197,7 +190,7 @@
 					
 					<button aria-label="Оформить заказ" type="button" class="jobsExampleBlock__orderBtn js-orderBtn">Заказать проект</button>
 
-					<a aria-label="Узнать стоимость" href="#price" class="jobsExampleBlock__checkCostBtn servicesBlock__checkCostBtn js-main-menu-list-item__link">Узнать стоимость</a>
+					<a href="#price" class="jobsExampleBlock__checkCostBtn servicesBlock__checkCostBtn js-main-menu-list-item__link">Узнать стоимость</a>
 				</div>
 			</section>
 
