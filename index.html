@@ -134,59 +134,58 @@
 						Примеры моих работ
 					</h2>
 
-					<div class="jobsExampleBlockCarousel">
-						<ul class="jobsList">
-							<li class="jobsListItem">
-								<figure class="jobsListItemImageContainer">
-									<picture>
-										<source media="(max-width: 1919px)" srcset="img/Layer2_1024.png 1x,img/Layer2_1024.png 2x">
-										<img src="img/Layer2.jpg" alt="Фото психолога">
-									</picture>
-									
+					<div class="slider-container">
+						<div class="swiper-container">
+							<ul class="jobsList swiper-wrapper">
+								<li class="jobsListItem swiper-slide">
+									<figure class="jobsListItemImageContainer">
+										<picture>
+											<source media="(max-width: 1440px)" srcset="img/Layer2_1024.png 1x,img/Layer2_1024.png 2x">
+											<img src="img/Layer2.jpg" alt="Фото психолога">
+										</picture>
+										
 
-									<figcaption class="jobsListItemImageContainer__caption">
-										Сайт психолога Веры Антоновой
-									</figcaption>
-								</figure>
-							</li>
+										<figcaption class="jobsListItemImageContainer__caption">
+											Сайт психолога Веры Антоновой
+										</figcaption>
+									</figure>
+								</li>
 
-							<li class="jobsListItem">
-								<figure class="jobsListItemImageContainer">
-									<picture>
-										<source media="(max-width: 590px)" srcset="img/Layer1_320.png 1x, img/Layer1_320.png 2x">
-										<source media="(max-width: 1919px)" srcset="img/Layer1_1024.png 1x, img/Layer1_1024.png 2x">
-										<img src="img/Layer1.jpg" alt="Ребёнок с игрушками">
-									</picture>
-									
-									<figcaption class="jobsListItemImageContainer__caption">
-										<span class="captionType1">Сайт магазина</span>
-										<span class="captionType2">Интерне-магазин</span>
-										детской одежды
-									</figcaption>
-								</figure>
-							</li>
+								<li class="jobsListItem swiper-slide">
+									<figure class="jobsListItemImageContainer">
+										<picture>
+											<source media="(max-width: 590px)" srcset="img/Layer1_320.png 1x, img/Layer1_320.png 2x">
+											<source media="(max-width: 1440px)" srcset="img/Layer1_1024.png 1x, img/Layer1_1024.png 2x">
+											<img src="img/Layer1.jpg" alt="Ребёнок с игрушками">
+										</picture>
+										
+										<figcaption class="jobsListItemImageContainer__caption">
+											<span class="captionType1">Сайт магазина</span>
+											<span class="captionType2">Интерне-магазин</span>
+											детской одежды
+										</figcaption>
+									</figure>
+								</li>
 
-							<li class="jobsListItem">
-								<figure class="jobsListItemImageContainer">
-									<img src="img/Layer3.jpg" alt="Рыбак с рыбой">
-									
-									<figcaption class="jobsListItemImageContainer__caption">
-										Сайт магазина &laquo;Рыболов&raquo;
-									</figcaption>
-								</figure>
-							</li>
-						</ul>
+								<li class="jobsListItem swiper-slide">
+									<figure class="jobsListItemImageContainer">
+										<img src="img/Layer3.jpg" alt="Рыбак с рыбой">
+										
+										<figcaption class="jobsListItemImageContainer__caption">
+											Сайт магазина &laquo;Рыболов&raquo;
+										</figcaption>
+									</figure>
+								</li>
+							</ul>
 
-						<ol class="indicatorsList">
-							<li class="indicatorsList__item indicatorsList__item_active"></li>
-							<li class="indicatorsList__item"></li>
-							<li class="indicatorsList__item"></li>
-						</ol>
+							<div class="swiper-pagination"></div>
+						</div>
 
-						<button aria-label="Пролистать карусель влево" class="jobsExampleBlock__arrowBtn" type="button"></button>
+						<button aria-label="Пролистать карусель влево" class="jobsExampleBlock__arrowBtn swiper-button-prev" type="button"></button>
 
-						<button aria-label="Пролистать карусель вправо" class="jobsExampleBlock__arrowBtn jobsExampleBlock__arrowBtn_arrow-right" type="button"></button>
+						<button aria-label="Пролистать карусель вправо" class="jobsExampleBlock__arrowBtn jobsExampleBlock__arrowBtn_arrow-right swiper-button-next" type="button"></button>
 					</div>
+					
 					
 					<button aria-label="Оформить заказ" type="button" class="jobsExampleBlock__orderBtn js-orderBtn">Заказать проект</button>
 
@@ -314,6 +313,8 @@
 		</div>
 
 		<script src="js/disable_scroll.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<script src="js/script.js"></script>
+		
 	</body>
 </html>
